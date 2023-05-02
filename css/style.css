@@ -10,14 +10,13 @@
     display: flex;
 }
 
-.wrapper{
-    border: 2px solid red;
+.container{
+    max-width: 1200px;
+    margin: 50px auto;
 }
 
-.container{
-    max-width: 1080px;
-    margin: 50px auto;
-    border: 2px dashed white;
+.wrapper{
+    min-width: 550px;
 }
 
 /* Generics */
@@ -37,14 +36,12 @@ header{
     align-items: center;
     padding: 10px;
     height: 50px;
-    border: 2px dashed white;
 }
 
 footer{
     background-color: #222222;
     height: 100px;
     padding: 10px;
-    border: 2px dashed white;
 }
 
 a{
@@ -109,6 +106,36 @@ a{
 
 .end_meeting{
     color: red;
+}
+
+/* Main */
+.row{
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.col{
+    position: relative;
+}
+
+.col_name{
+    font-size: 12px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 5px;
+}
+
+.col_img{
+    width: auto;
+    height: 100px;
+}
+
+.col{
+    flex-basis: 20%;
+    padding: 10px;
 }
 
 
