@@ -10,9 +10,14 @@
     display: flex;
 }
 
+.wrapper{
+    border: 2px solid red;
+}
+
 .container{
     max-width: 1080px;
-    margin: 0 auto;
+    margin: 50px auto;
+    border: 2px dashed white;
 }
 
 /* Generics */
@@ -22,18 +27,24 @@ body{
     font-family: sans-serif;
 }
 
+main{
+    height: calc(100vh - 150px);
+    overflow-y: auto;
+}
+
 header{
     justify-content: flex-end;
     align-items: center;
     padding: 10px;
-    border: 2px dashed white;
     height: 50px;
+    border: 2px dashed white;
 }
 
 footer{
     background-color: #222222;
     height: 100px;
     padding: 10px;
+    border: 2px dashed white;
 }
 
 a{
